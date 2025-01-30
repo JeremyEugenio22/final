@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'RapierZero';
+    src: url(Font/RapierZero/RapierZeroHollow-xqdO.ttf);
+}
+ 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    height: 380vh;
+
+    
+}
+
+header {
+    position: sticky; top: 0;
+    background-color: #2d283e;
+    padding: 0px 10px;
+    color: #fff;
+    z-index: 100;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;  
+}
+
+.menu-icon {
+    position: relative;
+    top: 10px;
+    left: 25px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px; /* Space between menu icon and logo */
+    padding-bottom: 25px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: auto;
+    width: 40px;
+    margin-right: 5px; /* Space between logo and text */
+    padding-left: 30px; 
+}
+
+.logo-text {
+    font-size: 30px;
+    font-style: italic;   
+    color: #802bb1;
+    font-family: 'RapierZero';
+    font-weight: bold;
+    cursor:default;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.icon li {
+    display: block;    
+    margin: 0;
+}
+
+.right-nav img {
+    width: 30px;   
+    padding: 15px 30px;
+    margin: 0;
+}
+
+.right-nav .nav-item1 {
+   width: 70px;
+   padding: 20px 20px;
+   margin: 0;
+}
+
+.nav-item1:hover {
+    background-color: #1b0024;
+}
+
+.nav-item:hover {
+    background-color: #1b0024;
+}
+
+.menu {
+    position:fixed;
+    top: 67px;
+    left: 0px;
+    
+    list-style:none;
+    margin: 0;
+    padding: 0px 0px;
+    background-color: #2d283e;
+    margin-left: 0px ;
+    text-align: center;     /* Center text horizontally */
+    line-height: 35px;
+
+    overflow: hidden; /* Prevent content overflow during animation */
+    transition: width 0.5s ease-in-out; /* Smooth transition for width */
+    
+    z-index: -1;
+    width: 0; /* Optional: Fixed width */
+    height: 60px;
+    display: flex;
+    
+    border-right-style: none; /* Solid red border */
+    border-bottom-right-radius:50px ; /* Rounded corners with 10px radius */  
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.5);  
+}
+
+
+
+.menu li {
+    padding: 10px 26px;   
+    
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    padding-left: 20px ;  
+}
+
+.menu li:hover {
+    background-color: #1b0024;
+    height: 50px;  
+    margin-top: 0;
+    text-align: center;   
+}
+
+.menu-icon:hover .menu {
+    opacity: 1; 
+    width: 500px; 
+    
+    border-right-style:solid;
+    border-color: #1b0024;
+    border-width: 2px; 
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 300px;
+}
+
+.search-container {
+    position: relative;
+    width: 354px; /* Adjust the width of the search bar */
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 12px 4px 10px 20px; /* Add padding for the button space */
+    border: 1px solid #564f6f;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    background-color: #564f6f;
+    color: #1b0024;
+}
+
+.search-container button {
+    position: absolute;
+    left: 340px; /* Adjust position inside the input field */
+    top: 21px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.search-container button img {
+    width: 20px; /* Adjust the size of the search icon */
+    height: 20px;
+    padding: 10px 10px;
+}
+.search-container button:hover {
+    background-color: #1b0024;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+

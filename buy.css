@@ -1,0 +1,467 @@
+
+
+/* Style the button */
+.toggle-label {
+    display: inline-block;
+    padding: 8px 15px;
+   
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(172, 172, 172);
+    font-family:Arial, Helvetica, sans-serif; 
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    top: 120px;
+    left: 45px;
+
+    border: 3px solid #942bb1; /* Solid red border */
+    border-radius: 20px; /* Rounded corners with 10px radius */
+    padding: 10px;
+    background-color: #2d283e; 
+
+    transition: transform 0.3s ease-in-out;
+
+    z-index: 1;
+    
+}
+
+.toggle-label:hover{
+  background-color: #cfaaff;
+  color:  #2d283e;
+  font-weight: bold;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* The box (hidden by default) */
+.box {
+    display: none;
+    width: 135px;
+    height: 170px;
+    color: rgb(172, 172, 172);
+    background-color: lightgray;
+    border: 1px solid #888;
+    padding: 10px;
+    position: absolute;
+    left: 8px;
+    top: 130px;
+    
+    margin-top: -30px; /* Align with button */
+    
+   
+    border: 3px solid #942bb1; /* Solid red border */
+    border-radius: 20px; /* Rounded corners with 10px radius */
+    padding: 10px;
+    background-color: #2d283e; 
+   
+}
+
+.form-row {
+    margin: 10px 2px;
+    text-align: left;
+    font-size: 12px;
+    
+}
+
+/* Style the select input */
+.form-row select {
+    width: 95px;
+    padding: 5px;
+    font-size: 12px;
+    color: rgb(172, 172, 172);
+    background-color: #2d283e;
+    border-radius: 5px;
+    border-color:#942bb1;
+    outline: 1px solid #942bb1;
+    
+}/* Hover effect for select */
+
+
+.form-row label{
+    font-size: 14px;
+}
+.form-text-areas label{
+    font-size: 14px;
+}
+.form-text-areas textarea {
+    position: relative;
+    top: 8px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 12px;
+    color: rgb(172, 172, 172);
+    border: 1px solid #D6D9DC;
+    width: 20px;
+    height: 20px;
+    background-color: #2d283e;
+    border-radius: 5px;
+    border-color:#942bb1;
+    outline: 1px solid #942bb1;
+    text-align: center;
+    resize: none;
+    line-height: 20px;
+    
+}
+
+/* Style for the fieldset container */
+.legacy-form-row {
+    
+    width: 100px;
+    color: rgb(172, 172, 172);
+}
+
+/* Style for the legend */
+.legacy-form-row legend {
+    text-align: center;
+    color: rgb(172, 172, 172);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+
+/* Style for the labels next to the radio buttons */
+.radio-label {
+    color: rgb(172, 172, 172);
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+/* Hover effect for the labels */
+.radio-label:hover {
+    color: #942bb1;
+}
+
+/* Style for checked radio button label */
+input[type="radio"]:checked + .radio-label {
+    font-weight: bold;
+    color: #942bb1;
+}
+
+
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+/* ai */
+#toggle-box-ai {
+    display: none; 
+}
+#toggle-box-ai:checked ~ .box {
+    display: block;  
+}
+#toggle-box-ai:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* enel */
+#toggle-box-enel {
+  display: none;
+}
+#toggle-box-enel:checked ~ .box {
+  display: block;
+}
+#toggle-box-enel:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* goku */
+#toggle-box-goku {
+    display: none;
+}
+#toggle-box-goku:checked ~ .box {
+    display: block;
+}
+#toggle-box-goku:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* hutao */
+#toggle-box-hutao {
+    display: none;
+}
+#toggle-box-hutao:checked ~ .box {
+    display: block;
+}
+#toggle-box-hutao:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* kato-megumi */
+#toggle-box-kato-megumi {
+    display: none;
+}
+#toggle-box-kato-megumi:checked ~ .box {
+    display: block;
+}
+#toggle-box-kato-megumi:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+
+/* luffy */
+#toggle-box-luffy {
+    display: none;
+}
+#toggle-box-luffy:checked ~ .box {
+    display: block;
+}
+#toggle-box-luffy:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* megumin */
+#toggle-box-megumin {
+    display: none;
+}
+#toggle-box-megumin:checked ~ .box {
+    display: block;
+}
+#toggle-box-megumin:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+
+/* miku */
+#toggle-box-miku {
+    display: none;
+}
+#toggle-box-miku:checked ~ .box {
+    display: block;
+}
+#toggle-box-miku:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+
+/* mio */
+#toggle-box-mio {
+    display: none;
+}
+#toggle-box-mio:checked ~ .box {
+    display: block;
+}
+#toggle-box-mio:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* rem */
+#toggle-box-rem {
+    display: none;
+}
+#toggle-box-rem:checked ~ .box {
+    display: block;
+}
+#toggle-box-rem:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+
+/* rengoku */
+#toggle-box-rengoku {
+    display: none;
+}
+#toggle-box-rengoku:checked ~ .box {
+    display: block;
+}
+#toggle-box-rengoku:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+
+/* zoro */
+#toggle-box-zoro {
+    display: none;
+}
+#toggle-box-zoro:checked ~ .box {
+    display: block;
+}
+#toggle-box-zoro:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* cap */
+#toggle-box-cap {
+    display: none;
+}
+#toggle-box-cap:checked ~ .box {
+    display: block;
+}
+#toggle-box-cap:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+
+/* ats */
+#toggle-box-ats {
+    display: none;
+}
+#toggle-box-ats:checked ~ .box {
+    display: block;
+}
+#toggle-box-ats:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* HP */
+#toggle-box-HP {
+    display: none;
+}
+#toggle-box-HP:checked ~ .box {
+    display: block;
+}
+#toggle-box-HP:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* MHAS */
+#toggle-box-MHAS {
+    display: none;
+}
+#toggle-box-MHAS:checked ~ .box {
+    display: block;
+}
+#toggle-box-MHAS:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* Hokage */
+#toggle-box-Hokage {
+    display: none;
+}
+#toggle-box-Hokage:checked ~ .box {
+    display: block;
+}
+#toggle-box-Hokage:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+
+/* ObanaiH */
+#toggle-box-ObanaiH {
+    display: none;
+}
+#toggle-box-ObanaiH:checked ~ .box {
+    display: block;
+}
+#toggle-box-ObanaiH:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* ACP */
+#toggle-box-ACP {
+    display: none;
+}
+#toggle-box-ACP:checked ~ .box {
+    display: block;
+}
+#toggle-box-ACP:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+
+#toggle-box-ATS2 {
+    display: none;
+}
+#toggle-box-ATS2:checked ~ .box {
+    display: block;
+}
+#toggle-box-ATS2:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* Senpai*/
+#toggle-box-Senpai {
+    display: none;
+}
+#toggle-box-Senpai:checked ~ .box {
+    display: block;
+}
+#toggle-box-Senpai:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* AnimeH*/
+#toggle-box-AnimeH {
+    display: none;
+}
+#toggle-box-AnimeH:checked ~ .box {
+    display: block;
+}
+#toggle-box-AnimeH:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* MuichiroH*/
+#toggle-box-MuichiroH {
+    display: none;
+}
+#toggle-box-MuichiroH:checked ~ .box {
+    display: block;
+}
+#toggle-box-MuichiroH:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}
+
+/* ATS3*/
+#toggle-box-ATS3 {
+    display: none;
+}
+#toggle-box-ATS3:checked ~ .box {
+    display: block;
+}
+#toggle-box-ATS3:checked + .toggle-label {
+    transform: translateY(-70px);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px ;
+}

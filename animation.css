@@ -1,0 +1,196 @@
+.Genre {
+  width: 1000px;
+  height: 60px; 
+  
+  position: absolute; top: 285px; left: 95px;
+  overflow: hidden;
+  
+  cursor: pointer;
+}
+
+.Genre p{
+  font-size: 1.4em;
+  width: 250px;
+  color: hwb(0 46% 54%);
+  font-family:Arial, Helvetica, sans-serif;    
+
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: auto;
+
+  object-fit: cover; 
+  opacity: 0;
+  animation: fade 30s infinite;
+}
+
+.Genre p:nth-child(1) {
+  animation-delay: 0s;
+}
+.Genre p:nth-child(2) {
+  animation-delay: 7.8s;
+}
+.Genre p:nth-child(3) {
+  animation-delay: 15.9s;
+}
+.Genre p:nth-child(4) {
+  animation-delay: 22.8s;
+}
+
+@keyframes fade {
+  0%, 25% {
+    opacity: 1;
+  }
+  30%, 100% {
+    opacity: 0; 
+  }
+}
+
+.Description {
+    width: 1000px;
+    height: 150px; 
+    position: absolute; top: 325px; left: 73px;
+    overflow: hidden;
+    
+  }
+  
+  .Description p{
+    font-size: 20px ;  
+    color: hwb(0 67% 33%);
+    font-family:'Courier New';
+    font-weight:600;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 550px;
+    height: auto;
+
+    object-fit: cover; 
+    opacity: 0;
+    animation: fade 30s infinite;
+  }
+  
+  
+  .Description p:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .Description p:nth-child(2) {
+    animation-delay: 7.8s;
+  }
+  .Description p:nth-child(3) {
+    animation-delay: 15.9s;
+  }
+  .Description p:nth-child(4) {
+    animation-delay: 22.8s;
+  }
+  
+  @keyframes fade {
+    0%, 25% {
+      opacity: 1;
+    }
+    30%, 100% {
+      opacity: 0; 
+    }
+  }
+  
+  
+  .slider-sbg {
+    width: 1000px; 
+    height: 150px; 
+    position: absolute; top: 175px; left: 73px;
+    overflow: hidden;
+    
+  }
+  
+  .slider-sbg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 30s infinite;
+  }
+  
+
+  .slider-sbg img:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .slider-sbg img:nth-child(2) {
+    animation-delay: 7.8s;
+  }
+  .slider-sbg img:nth-child(3) {
+    animation-delay: 15.9s;
+  }
+  .slider-sbg img:nth-child(4) {
+    animation-delay: 22.8s;
+  }
+  
+  @keyframes fade {
+    0%, 25% {
+      opacity: 1; 
+    }
+    30%, 100% {
+      opacity: 0; 
+    }
+  }
+  
+  
+  /* Style the container */
+.slide-bg {
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflowing content */
+  position: absolute;
+  z-index: -15;
+}
+
+/* Style the inner container for images */
+.slide-images-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-images-bg img {
+  position: absolute;
+  width: 100%; /* Make each image fill the container width */
+  height: 100%; /* Make each image fill the container height */
+  object-fit: cover; /* Maintain aspect ratio and crop overflow */
+  opacity: 0; /* Start fully transparent */
+  animation: fade 30s infinite; /* Infinite fade animation */
+}
+
+/* Define animations for each image */
+.slide-images-bg img:nth-child(1) {
+  animation-delay: 0s; /* First image starts immediately */
+}
+.slide-images-bg img:nth-child(2) {
+  animation-delay: 7.8s; /* Second image starts after 4 seconds */
+}
+.slide-images-bg img:nth-child(3) {
+  animation-delay: 15.9s; /* Third image starts after 8 seconds */
+}
+.slide-images-bg img:nth-child(4) {
+  animation-delay: 22.8s; /* Fourth image starts after 12 seconds */
+}
+
+/* Keyframes for fading animation */
+@keyframes fade {
+  0% {
+    opacity: 0; /* Fully transparent */
+  }
+  25% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Fade out again */
+  }
+  100% {
+    opacity: 0; /* Ensure it stays transparent before restarting */
+}
+}

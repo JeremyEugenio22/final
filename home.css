@@ -1,0 +1,272 @@
+
+.Watch-Now img{
+  width: 43px;
+  position:absolute; top: 0px; left: 5px;
+  margin-top: 0px;
+  
+}
+
+.Watch-Now p{
+  font-size: 20px;
+  position: absolute; top: 468px; left: 70px;
+  text-indent: 35px;
+  width: 150px;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif; 
+
+  border: 3px solid #942bb1; /* Solid red border */
+  border-radius: 50px; /* Rounded corners with 10px radius */
+  padding: 10px;
+  background-color: #2d283e; 
+
+  
+}
+
+.Watch-Now p:hover{
+  background-color: #cfaaff;
+  color:  #2d283e;
+  font-weight: bold;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.diamond-icon img{
+  width: 15px;
+  position: absolute; top: 311px; left: 73px;
+}
+
+
+.your-favorites{
+  font-size: 25px;
+  color: hwb(0 46% 54%);
+  font-family:Verdana;    
+  font-weight: bold;
+  position: absolute; top: 620px; left: 70px;
+}
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+  gap: 20px;
+  padding: 10px;
+  padding-right: 330px;
+  padding-left: 50px;
+
+  
+}
+
+.card {
+  position: relative;
+  top:610px;
+  background-color: #222;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: transform 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+ 
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #aaa;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 15px;
+  
+}
+
+.card-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  font-size: 12px;
+  color: #fff;
+  padding: 30px 10px;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0 10px 10px 0;           
+}
+
+.title-description{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  justify-content: start;
+  align-items:normal;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px 10px;
+  text-align: left;
+
+}
+
+.card:hover .card-description{
+  opacity: 1;
+}        
+.card:hover .title-description{
+  opacity: 1;
+}
+
+.top-anime{
+  font-size: 25px;
+  color: #aaa;
+  font-family:Verdana;    
+  font-weight: bold;
+  position: absolute; top: 670px; left: 1050px;
+  background-color: #2d283e; 
+  
+  text-align: center;
+  justify-content: center;
+  width: 286px;
+  
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.ranking {
+  width: 260px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #000000;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 725px;
+  left: 1050px;
+
+  border: 3px solid #2b2b2b;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.ranking-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.ranking-item:last-child {
+  border-bottom: none;
+}
+
+.ranking-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #aaa;
+  width: 30px;
+  text-align: center;
+}
+
+.ranking-img {
+  width: 50px;
+  height: 75px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.ranking-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ranking-details {
+  flex-grow: 1;
+}
+
+.ranking-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #2d283e;
+}
+
+.ranking-stats {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+.ranking :hover{
+  background-color: #222;
+}
+
+.lower .want-more p{
+  align-items: center;
+  justify-content: center;
+}
+.want-more{
+  position: absolute;
+   top: 1875px;
+  left:38.5%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+
+}
+
+.want-more p{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.more{
+  width: 130px;
+   position: absolute;
+   top: 1750px;
+  left:42%;
+
+   padding-bottom: 0;
+   
+   
+  }
+
+  .View-All p{
+    font-size: 18px;
+    position: absolute; top: 1930px; left: 45%;
+    text-align: center;
+    width: 100px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif; 
+  
+    border: 3px solid #942bb1; /* Solid red border */
+    border-radius: 0px; /* Rounded corners with 10px radius */
+    padding: 5px;
+    background-color: #2d283e; 
+  
+    
+  }
+
+  .View-All p:hover{
+    background-color: #cfaaff;
+    color:  #2d283e;
+    font-weight: bold;
+    transform: scale(1.1);
+    cursor: pointer;
+  }

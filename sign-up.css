@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Cheese Market';
+    src: url(font/cheese_market/Cheese\ Market.otf);
+}
+@font-face {
+    font-family: 'RapierZero';
+    src: url(Font/RapierZero/RapierZeroHollow-xqdO.ttf);
+}
+ 
+
+
+header {
+    position: sticky; 
+    background-color: transparent;
+    padding: 10px 0px;
+    color: #fff;
+    z-index: 100;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.logo {
+    height: auto;
+    width: 40px;
+    margin-right: 5px; /* Space between logo and text */
+    padding-left: 30px; 
+}
+
+.logo-text {
+    font-size: 40px;
+    font-style: italic;   
+    color: #802bb1;
+    font-family: 'RapierZero';
+    font-weight: bold;
+    cursor:default;
+    
+}
+
+.logo-text a{
+    text-decoration: none;
+}
+
+.logo-text a:hover{
+color: #802bb1;
+
+}
+
+
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #000000;
+    height: 50vh;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    
+    
+}
+
+.sub-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    height: 75vh;
+    border-radius: 12px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px,
+                rgb(81, 5, 110) 0px 8px 16px 5px; /* Fixed "box-shadow" syntax */
+    background-color: transparent;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+}
+
+h2 {
+    font-size: 1.5rem; /* Adjusted to a more reasonable size */
+    margin: 1.5rem 2rem 0; /* Fixed margin syntax */
+    text-align: center;
+    position: relative;
+    top: 0px;
+    color: #802bb1;
+    font-family: 'Cheese Market';
+    letter-spacing: 2px;
+}
+
+label {
+    padding-left: 16px;
+    opacity: 0.75;
+   
+}
+
+input {
+    display: flex;
+    border-radius: 50px;
+    border: 1px solid #D1D7E0;
+    outline: none;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    width: 250px;
+    background-color: transparent;
+    color: #D1D7E0;
+    position: relative;
+    top: 10px;
+    font-size: 10px;
+    letter-spacing: 2px;
+ 
+}
+
+input::placeholder {
+    color: #D1D7E0;
+}
+
+input:focus {
+    opacity: 0.7;
+}
+
+button {
+    padding: 12px 48px;
+    border-radius: 50px;
+    color: white;
+    margin-top: 1rem;
+    cursor: pointer; /* Fixed "cUrsor" typo */
+    outline: none;
+    border-width: 0;
+    background-color: #802bb1;
+    font-weight: 600;
+    width: 100%;
+    
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.bottom-form { /* Fixed "bottom- form" typo */
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.no-account{
+    color: #D1D7E0;
+    font-size: 13px;
+}
+
+.signup {
+    padding-left: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #993838;
+    font-size: 13px;
+
+}
+
+.signup:hover {
+    opacity: 0.8;
+}
+.username-icon {
+    width: 20px;
+}
+
+.username-log img{
+    width: 18px;
+    position: absolute;
+    top: 236px;
+    left:325px;
+}
+
+.password-log img{
+    width: 18px;
+    position: absolute;
+    top: 294px;
+    left:325px;
+}
+
+.login-icon{
+width: 150px;
+ position: relative;
+ top: 45px;
+ left: 70px;
+ padding-bottom: 0;
+ 
+}
+
+.login-icon2{
+    width: 170px;
+     position: absolute;
+     top: 35px;
+     left: 118px;
+     padding-bottom: 0;
+     filter: brightness(0);
+
+    }
+    
+
